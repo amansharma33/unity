@@ -1,0 +1,29 @@
+//
+//  MaintabView.swift
+//  myportfolio
+//
+//  Created by Ravi Sharma on 20/06/25.
+//
+
+import SwiftUI
+
+struct MainTabView: View {
+    var body: some View {
+        TabView {
+            AboutView()
+                .tabItem {
+                    Label("About", systemImage: "person.circle")
+                }
+
+            ProjectsView()
+                .tabItem {
+                    Label("Projects", systemImage: "folder")
+                }
+
+            ContentView()
+                .tabItem {
+                    Label("Contact", systemImage: "envelope")
+                }
+        }
+    }
+}
